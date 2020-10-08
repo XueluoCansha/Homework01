@@ -24,5 +24,5 @@
 ## 核心代码
 
 ## 实验结果
-
+![result](https://github.com/sTormfroNT-TNT/Homework01/blob/main/img/01.png)
 ## 实验感想
