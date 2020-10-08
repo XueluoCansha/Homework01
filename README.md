@@ -20,7 +20,12 @@
     d）尝试把本次实验的多个类放置在不同的包中，体会修饰符private的用法。
     
 ## 实验设计
-
+    代码用public class定义了四个类：PC、CPU、HardDisk、和Test，其中Test是主类。
+    在CPU类和HardDisk类中，通过实验要求的get属性()和return语句返回值，set属性(int m)方法将m的值赋给属性。
+    在PC类中用set类名(类名 属性)方法定义一个CPU变量和一个HardDisk变量，并将变量的值赋给属性变量。
+    定义show()输出函数，用System.out.println()函数输出：CPU的速度、CPU的利用率、硬盘的容量、硬盘的读写速度、PC的内存。其中CPU的速度和硬盘的容量是基本要求中输出的结果。
+    在Test类main()方法中创建CPU对象cpu，并将CPU类初始值设定为2200，这样输出的speed值就是2200。同理，创建HardDisk对象disk，并将HardDisk类初始值设定为200，这样输出的amount值就是200。
+    
 ## 核心代码
 
 ## 实验结果
