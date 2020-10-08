@@ -24,10 +24,19 @@
     在CPU类和HardDisk类中，通过实验要求的get属性()和return语句返回值，set属性(int m)方法将m的值赋给属性。
     在PC类中用set类名(类名 属性)方法定义一个CPU变量和一个HardDisk变量，并将变量的值赋给属性变量。
     定义show()输出函数，用System.out.println()函数输出：CPU的速度、CPU的利用率、硬盘的容量、硬盘的读写速度、PC的内存。其中CPU的速度和硬盘的容量是基本要求中输出的结果。
-    在Test类main()方法中创建CPU对象cpu，并将CPU类初始值设定为2200，这样输出的speed值就是2200。同理，创建HardDisk对象disk，并将HardDisk类初始值设定为200，这样输出的amount值就是200。
+    在Test类main()方法中创建CPU对象cpu，通过“类对象.属性”的形式访问属性值，这样输出的speed值就是2200。同理，创建HardDisk对象disk，输出amount值200。
     
 ## 核心代码
-
+    构造方法以CPU类为例：
+    构造方法其一：
+    CPU(){
+	}
+    构造方法其二：
+    public double utility;
+    CPU(double utility){
+    	this.utility = utility;
+	}
+    其中构造方法二定义了一个CPU类的新变量utility(利用率)，因为是利用率，有小数点后面的数字，所有用double类型定义。同理，在HardDisk类中定义新变量rate(读写速率)，同样用double类型定义。
 ## 实验结果
 ![result](https://github.com/sTormfroNT-TNT/Homework01/blob/main/img/01.png)
 ## 实验感想
